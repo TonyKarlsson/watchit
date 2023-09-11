@@ -1,0 +1,46 @@
+.inactive_button,
+.active_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  border: 2px solid #fff;
+}
+
+@media only screen and (max-width: 749px) {
+  .inactive_button,
+  .active_button {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    padding: 10px 12px;
+  }
+}
+
+.inactive_button {
+  color: #fff;
+  background-color: transparent;
+}
+
+.inactive_button:hover {
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+  border-color: #c9c9c9;
+  color: #c9c9c9;
+}
+
+.active_button:hover {
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+  border-color: #c9c9c9;
+  background-color: #c9c9c9;
+}
+
+.active_button {
+  color: #1a1a1a;
+  background-color: #fff;
+}

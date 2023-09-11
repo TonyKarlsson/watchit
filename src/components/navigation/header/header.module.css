@@ -1,0 +1,29 @@
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+@media only screen and (max-width: 1001px) {
+  .mobile {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1001px) {
+  .mobile {
+    display: none;
+  }
+}
+
+.heading {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+}

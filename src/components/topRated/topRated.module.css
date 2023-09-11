@@ -1,0 +1,41 @@
+@media only screen and (max-width: 1000px) {
+  .grid_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 16px;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 1001px) {
+  .grid_container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    row-gap: 16px;
+    margin-top: 32px;
+  }
+}
+
+.body {
+  margin-top: 40px;
+  color: #fff;
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+}
+
+.show_all {
+  margin-left: 16px;
+  color: #575757;
+}
+
+.show_all:hover {
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
